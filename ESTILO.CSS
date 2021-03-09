@@ -1,0 +1,75 @@
+*{
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing:border-box;
+    box-sizing:border-box;
+}
+
+body{
+   background: #657ca5;
+}
+
+.navegacion{
+    width: 1000px;
+    margin: 30px auto;
+    background: cornsilk;
+    border-radius: 30px;
+}
+
+.navegacion ul{
+    list-style: none;
+}
+
+.menu > li{
+    position: relative;
+    display: inline-block;
+}
+
+.menu > li > a{
+    display: block;
+    padding: 15px 20px;
+    color: #030303;
+    font-family: 'Bahnschrift';
+    text-decoration: none;
+}
+
+.menu li a:hover{
+    color:rgb(226, 37, 94);
+    transition: all .3s;
+}
+    /* submenu*/
+
+.submenu{
+    position: absolute;
+    background: #333333;
+    width: 120%;
+   visibility: hidden;
+   opacity: 0;
+   transition: opacity 1.5s;
+}
+
+
+.submenu li a{
+    display: block;
+    padding: 15px;
+    color: rgb(14, 191, 236);
+    font-family: 'Bahnschrift';
+    text-decoration: none;
+}
+
+.menu li:hover .submenu{
+    visibility: visible;
+    opacity: 1;
+}
+
+.referencias a:hover{
+    color:rgb(226, 223, 37);
+    transition: all .3s;
+
+}
+
+.referencias a:hover{
+    visibility: visible;
+    opacity: 1;
+}
